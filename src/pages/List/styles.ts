@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
 export const ListContainer = styled.main`
-    overflow-y: scroll;
-    height: 92vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     > div {
-        height: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -9,7 +9,7 @@ export function Header() {
         </CustomNavLink>
             <span>Funniest Cat Awards</span>
         <CustomNavLink to='/list' title='List'>
-            List
+            Winners
         </CustomNavLink>
     </NavContainer>
   )

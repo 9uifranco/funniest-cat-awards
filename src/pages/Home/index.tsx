@@ -24,6 +24,10 @@ export function Home() {
         getCat();
     }, [])
 
+    // Get random cat from cataas API
+    // Store cat URL into a state and check if the cat has already shown up for someone
+    // 
+
     const getCat = async () => {
         let { data, error } = await supabase
             .rpc('get_cat')
@@ -108,7 +112,7 @@ export function Home() {
     const crossPathB = useTransform(x, [-50, -80], [0, 1]);
 
     const handleXChange = () => {
-        // If already got a new cat
+        // If already got a cat
         if(cat) {
             // if did not vote
             if (x.get() <= 80 && x.get() >= -80) { 
@@ -116,6 +120,7 @@ export function Home() {
             }
             // else if vote
             let funny = cat.funny;
+
             if (x.get() >= 80) {
                 console.log("yes");
                 funny++
@@ -124,6 +129,7 @@ export function Home() {
                     x.set(0)
                 }, 1000);
             }
+
             if (x.get() <= -80) {
                 console.log("no");
                 x.stop()
@@ -131,7 +137,6 @@ export function Home() {
                     x.set(0)
                 }, 1000);
             }
-
 
             const newRate: number = (funny/cat.total)
 
