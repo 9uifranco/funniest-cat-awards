@@ -9,7 +9,7 @@ export const NavContainer = styled.nav`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     z-index: 10;
     padding: 0 1rem;
     border-bottom: 1px solid black;

@@ -7,7 +7,9 @@ export const MainContainer = styled(motion.div)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding-top: 3rem;
+    overflow-x: hidden;
+
     > h1 {
         margin-top: 2rem;
     }

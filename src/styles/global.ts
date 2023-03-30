@@ -1,9 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-    html, body {
+    body {
         margin: 0 auto;
         height: 100vh;
+        width: 100%;
         overflow-x: hidden;
         background-color: #353333;
         color: white;

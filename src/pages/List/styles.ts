@@ -5,6 +5,7 @@ export const ListContainer = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 3rem;
 
     > div {
         height: auto;
